@@ -15,13 +15,14 @@
 /*header*/
 
 header {
+    width: 100%;
   display: flex;
   border-bottom: 1px solid #ddd;
   justify-content: space-between;
   align-items: center;
   padding: 20px 3%;
   box-shadow: 0 0 5px grey;
-  width: 100%;
+
 }
 
 .logo img {
@@ -71,7 +72,6 @@ ul li {
   flex-wrap: wrap;
   margin-top: 4rem;
   padding: 0 7%;
- 
 }
 
 .section-1 .text {
@@ -147,16 +147,12 @@ button:hover {
 }
 
 @media (max-width: 1258px) {
-  nav{
+  nav {
     display: none;
   }
-  .section-1 img{
+  .section-1 img {
     display: none;
   }
-
-
-  
-
 }
 
 @media (max-width: 768px) {
@@ -170,46 +166,90 @@ button:hover {
   }
 }
 
-@media (max-width:565px){
-    .buttons{
-        display: none;
+@media (max-width: 565px) {
+  .buttons {
+    display: none;
+  }
+  .logo {
+    padding: 0 3%;
+  }
+  .section-1 {
+    
+    padding: 10px 40%;
+  }
+  .section-1 .text h1 {
+    font-size: 65px;
+
+    width: 100%;
+  }
+
+  .section-1 .text p {
+    font-size: 24px;
+  }
+}
+
+
+@media (max-width:532px){
+    .section-1 .text {
+        padding: 0 1rem; 
     }
-    .logo{
-        padding: 0 3%;
-    }
-    .section-1{
-        border: 2px solid red;
-        padding: 10px 40% ;
-    }
+}
+
+
+@media (max-width:503px){
     .section-1 .text h1{
-        font-size: 65px;
+        font-size: 60px;
+    }
+    .section-1 .text {
+        color: green;
+        padding: 0 2rem;
         
         
+    }
+    header{
         width: 100%;
     }
+}
+   
 
-    .section-1 .text p{
-        font-size: 24px;
-        
+@media (max-width:460px){
+    .section-1 .text {
+        padding: 0 2.5rem;
     }
+    .section-1 .text h1{
+        font-size: 55px;
+    }
+}
+
+@media (max-width:440px){
+    .section-1 .text{
+        padding: 0 3rem;
+    }
+    
     
 }
 
 
-@media (max-width:528px){
-    .section-1{
-        width: 50%;
-        
-        
-        padding: 0 7rem;
-    }
-    .section-1 .text  h1{
-        color: blue;
-        font-size: 60px;
-        width: 100%;
-
-    }
-    .section-1 .text p{
-        font-size: 20px;
+@media (max-width:431px){
+    .section-1 .text{
+        padding: 0 4rem;
+        display: flex;
+        justify-content: center;
     }
 }
+
+
+@media (max-width:391px){
+    
+
+
+    .section-1 .text{
+        padding: 0 4.5rem;
+            color: red;
+        
+    }
+    .section-1 .text h1{
+        font-size: 50px;
+    }
+}
+        
