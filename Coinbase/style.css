@@ -12,16 +12,21 @@
   --color-lis: #050f19;
 }
 
+body{
+    background-color: var(--color-body);
+}
+
 /*header*/
 
 header {
-    width: 100%;
+  width: 100%;
   display: flex;
   border-bottom: 1px solid #ddd;
   justify-content: space-between;
   align-items: center;
   padding: 20px 3%;
   box-shadow: 0 0 5px grey;
+  
 
 }
 
@@ -146,6 +151,7 @@ button:hover {
   opacity: none;
 }
 
+/*De aquí empieza las MQ responsive*/
 @media (max-width: 1258px) {
   nav {
     display: none;
@@ -186,6 +192,10 @@ button:hover {
   .section-1 .text p {
     font-size: 24px;
   }
+  #icon{
+    display: flex;
+  }
+  
 }
 
 
@@ -253,3 +263,14 @@ button:hover {
     }
 }
         
+
+
+/*Menu*/
+
+#icon{
+    color: var(--color-azul);
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+    margin-bottom: 0;
+}
