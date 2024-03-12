@@ -26,8 +26,6 @@ header {
   align-items: center;
   padding: 20px 3%;
   box-shadow: 0 0 5px grey;
-  
-
 }
 
 .logo img {
@@ -48,7 +46,10 @@ nav ul {
 ul li {
   color: var(--color-lis);
   font-weight: 600;
+  cursor: pointer;
+
 }
+
 
 .buttons button:first-child {
   border: none;
@@ -77,6 +78,7 @@ ul li {
   flex-wrap: wrap;
   margin-top: 4rem;
   padding: 0 7%;
+  
 }
 
 .section-1 .text {
@@ -262,7 +264,14 @@ button:hover {
         font-size: 50px;
     }
 }
-        
+    
+
+@media  screen and(max-width:381px) {
+  .section-1 .text{
+    padding: 0 5rem;
+  }
+  
+}
 
 
 /*Menu*/
