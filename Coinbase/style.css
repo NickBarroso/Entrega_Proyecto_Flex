@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-azul: #0052ff;
+  --color-body: #ffffff;
+  --color-title: #0a0b0d;
+  --color-parrafo: #5b616e;
+  --color-lis: #050f19;
+}
+
+/*header*/
+
+header {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 3%;
+  box-shadow: 0 0 5px grey;
+  width: 100%;
+}
+
+.logo img {
+  width: 130px;
+  font-weight: 900;
+}
+
+nav {
+  display: flex;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  gap: 30px;
+}
+
+ul li {
+  color: var(--color-lis);
+  font-weight: 600;
+}
+
+.buttons button:first-child {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.buttons button:last-child {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: var(--color-azul);
+  color: #ffffff;
+}
+
+/*section 1*/
+
+.section-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  padding: 0 7%;
+ 
+}
+
+.section-1 .text {
+  width: 40%;
+  max-width: 500px;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.section-1 .text h1 {
+  font-size: 72px;
+  color: var(--color-title);
+  font-weight: 400;
+}
+
+.section-1 .text p {
+  font-size: 28px;
+  color: var(--color-parrafo);
+  font-weight: 600;
+}
+
+.section-1 .text span {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(143, 141, 141);
+}
+
+.section-1 img {
+  width: 48%;
+  max-width: 600px;
+  min-width: 550px;
+  max-height: 800px;
+}
+
+.buttons-2 {
+  display: flex;
+  gap: 20px;
+}
+/*Debía haber usado un mixin para los buttons*/
+.buttons-2 button:first-child {
+  border: none;
+  padding: 15px 40px;
+  border-radius: 25px;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: var(--color-azul);
+  color: #ffffff;
+}
+/* En Genaral*/
+button {
+  transition: 0.2s;
+}
+button:hover {
+  opacity: 0.8;
+}
+/*General*/
+
+.buttons-2 {
+  margin-top: 1rem;
+}
+.buttons-2 button:last-child {
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
+  color: var(--color-azul);
+  font-weight: 400;
+}
+
+.buttons-2 button:last-child:hover {
+  font-weight: 900;
+  opacity: none;
+}
+
+@media (max-width: 1258px) {
+  nav{
+    display: none;
+  }
+  .section-1 img{
+    display: none;
+  }
+
+
+  
+
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 30px 5%;
+  }
+  .buttons-2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+}
